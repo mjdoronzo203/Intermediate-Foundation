@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript">
+		
+		PART 1
+
+		Challenge 1:
+
+		function sigma(num) {
+		  sum = 0;
+		  for(i=1; i<=num; i++) {
+		    sum = sum + i;
+		  }
+		  return sum;
+		}
+		y = sigma(10)
+		//console.log(y)
+
+
+
+		Challenge 2:
+
+		function factorial(num) {
+		  factor = 1;
+		  for(i=1; i<=num; i++) {
+		    factor = factor*i;
+		  }
+		  return factor;
+		}
+		y = factorial(4)
+		//console.log(y)
+
+
+
+		Challenge 3:
+
+		function fibonacci(num) {
+		  x = 0;
+		  y = 1;
+		  
+		  while(num >= 1) {
+		    count = y;
+		    y = x + y;
+		    x = count;
+		    num--;
+		  }
+		  return x;
+		}
+		z = fibonacci()
+		//console.log(z)
+
+
+
+		Challenge 4:
+
+		function retSecondLast(x) {
+		  if(x.length < 2) {
+		    return "null";
+		  }
+		  j = x[x.length - 2];
+		  return j;
+		}
+		y = retSecondLast([1])
+		//console.log(y)
+
+
+
+		Challenge 5:
+
+		function retNthFromLast(arr, n) {
+		  if(arr.length < n) {
+		    return "null";
+		  }
+		  j = arr[arr.length - n];
+		  return j;
+		}
+		y = retNthFromLast([78, 32, 42, 15, 12], 4)
+		//console.log(y)
+
+
+
+		Challenge 6:
+
+		function retSecondLargest(x) {
+		  if(x.length < 2) {
+		    return 'null';
+		  }
+		  max = x[0];
+		  secLargest = x[1];
+		  for(i=0; i<x.length; i++) {
+		    if(x[i] > max) {
+		      secLargest = max;
+		      max = x[i];
+		    }
+		  else if(x[i] > secLargest && x[i] !=max) {
+		    secLargest = x[i];
+		  }
+		  }
+		  return secLargest;
+		}
+		y = retSecondLargest([42, -8.67, 111, 67.2, 97.1, -5])
+		//console.log(y)
+
+
+
+		Challenge 7:
+
+		function arrDoubleElement(x) {
+		  c=[];
+		  for(i=0; i<x.length; i++) {
+		    c.push(x[i]);
+		    c.push(x[i]);
+		  }
+		  x = c;
+		  return x;
+		}
+		y = arrDoubleElement([42, 'cat', 76, 8, 'dog'])
+		//console.log(y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</html>
